@@ -1968,12 +1968,18 @@
                 </td>
                 <td>
                   <span class="wrapper inline">
-                    <img src="images/ok_green.png" alt="" />
+                    <img src="images/ok_blue.png" alt="" />
                   </span>
                   <a href="checks/naming/membername.html#MemberName">MemberName</a>
                   (<a href="https://github.com/search?q=path%3Asrc%2Fmain%2Fresources%20path%3A**%2Fgoogle_checks.xml+repo%3Acheckstyle%2Fcheckstyle+MemberName">
                   config</a>)
                 </td>
+                <br/>
+                <br/>
+                As noted in 5.2.4, constants cannot be reliably identified,
+                since not every static final field is a true constant.
+                This means 5.2.5 also cannot be fully checked,
+                as static final but non-constant fields may be missed.
                 <td>
                   <a href="https://github.com/checkstyle/checkstyle/tree/master/src/it/resources/com/google/checkstyle/test/chapter5naming/rule525nonconstantfieldnames">
                     samples</a>
